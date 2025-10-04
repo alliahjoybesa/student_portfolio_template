@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alliah Besa — Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(900px 400px at 10% 10%, rgba(251,45,182,0.06), transparent 8%),
+                  linear-gradient(180deg,#ffe4ec,#ffd6e9 45%,#ffd6e9 100%);
+      color:#4d0033;
+      padding-bottom:60px;
+    }
+
+    .top-nav{
+      background:rgba(255,255,255,0.96);
+      box-shadow:0 6px 18px rgba(204,0,102,0.06);
+      position:sticky;top:0;z-index:99
+    }
+    .nav-wrap{max-width:1000px;margin:0 auto;padding:10px 20px;display:flex;justify-content:center}
+    .nav{list-style:none;display:flex;gap:8px}
+    .nav a{
+      display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;
+      color:#a6006c;font-weight:600;transition:all .18s
+    }
+    .nav a.active{color:#fb2db6;border-bottom:3px solid #fb2db6}
+    .nav a:hover{background:rgba(251,45,182,0.1)}
+
+    .wrap{max-width:1000px;margin:34px auto;padding:18px}
+    .card{
+      background:#ffffff;border-radius:12px;padding:26px;
+      box-shadow:0 18px 40px rgba(204,0,102,0.06);margin-bottom:20px
+    }
+    .profile{display:flex;gap:26px;align-items:flex-start}
+    .avatar{width:160px;height:160px;border-radius:12px;object-fit:cover;border:4px solid #ff99cc}
+    .profile h2{color:#fb2db6;margin-bottom:6px}
+    .meta-list{margin-top:8px}
+    .meta-list div{margin-bottom:8px;color:#660033}
+    .desc{margin-top:10px;color:#4d0033}
+
+    h3{color:#fb2db6;margin-bottom:12px}
+    .box{
+      background:#ffffff;border-radius:10px;padding:14px;
+      border-left:4px solid #fb2db6
+    }
+    ul{margin-top:8px;padding-left:18px}
+    li{margin-bottom:6px;color:#4d0033}
+
+    @media (max-width:720px){
+      .profile{flex-direction:column;align-items:center;text-align:center}
+      .avatar{width:140px;height:140px}
+    }
+  </style>
+</head>
+<body>
+  <header class="top-nav">
+    <div class="nav-wrap">
+      <ul class="nav" role="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="wrap" aria-labelledby="resume-title">
+    <article class="card" id="resume-card">
+      <section class="profile" aria-labelledby="name">
+        <img class="avatar" src="images\profile.jpg" alt="Alliah Besa">
+        <div>
+          <h2 id="name">Alliah C. Besa</h2>
+          <div class="meta-list">
+            <div><strong>Age:</strong> 21</div>
+            <div><strong>Address:</strong> Bulan, Sorsogon, Philippines</div>
+            <div><strong>Course:</strong> Bachelor of Science in Information Systems</div>
+          </div>
+          <p class="desc"><strong>Description:</strong> Information Systems student who likes creating useful systems and supporting IT projects. Focused on using technology to improve everyday work.</p>
+      </section>
+    </article>
+
+    <section class="card" aria-labelledby="education">
+      <h3 id="education">Education</h3>
+      <div class="box">
+        <strong>Bachelor of Science in Information Systems</strong><br>
+        <small>Sorsogon State University (Bulan Campus) — 2022 to Present</small>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="skills">
+      <h3 id="skills">Skills</h3>
+      <div class="box">
+        <ul>
+          <li><strong>Technical Writing & Documentation:</strong> Created clear and detailed project documentation, reports, and user guides.</li>
+          <li><strong>Basic Web Development:</strong> HTML & CSS — built personal portfolio</li>
+          <li><strong>Database Management:</strong> ERD design and basic SQL concepts</li>
+          <li><strong>Documentation & Research:</strong> Technical reports and project documentation</li>
+          <li><strong>Communication & Teamwork:</strong> Collaborated effectively with team members to produce high-quality deliverables.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="experience">
+      <h3 id="experience">Experience</h3>
+      <div class="box">
+       <strong>SK Councilor – Sangguniang Kabataan (Barangay Zone 7)</strong><br>
+        <small>Role: SK Councilor </small>
+        <ul>
+          <li>Organized youth-focused programs and activities that promoted leadership, sports, and community engagement</li>
+          <li>Assisted in implementing barangay initiatives for education, health, and environmental awareness</li>
+          <li>Facilitated youth consultations to gather concerns and represent them in barangay council meetings</li>
+          <li>Helped strengthen collaboration between youth and local officials for community development</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
